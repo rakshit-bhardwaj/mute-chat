@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mute-chat/static/css/main.68e15ba4.css",
-    "main.js": "/mute-chat/static/js/main.74f10021.js",
+    "main.js": "/mute-chat/static/js/main.ff60b431.js",
     "static/media/bg.jpg": "/mute-chat/static/media/bg.a3199e88414fba34b4ba.jpg",
     "static/media/mutechatlogo.svg": "/mute-chat/static/media/mutechatlogo.5017bd70ec346a6e1e60b06c88827964.svg",
     "index.html": "/mute-chat/index.html",
@@ -9,10 +9,10 @@
     "static/media/copy.svg": "/mute-chat/static/media/copy.4c19a6dd8558a8e82f16d174837df176.svg",
     "static/media/more-vertical.svg": "/mute-chat/static/media/more-vertical.4cad70953b302c2ee888bebb7b319618.svg",
     "main.68e15ba4.css.map": "/mute-chat/static/css/main.68e15ba4.css.map",
-    "main.74f10021.js.map": "/mute-chat/static/js/main.74f10021.js.map"
+    "main.ff60b431.js.map": "/mute-chat/static/js/main.ff60b431.js.map"
   },
   "entrypoints": [
     "static/css/main.68e15ba4.css",
-    "static/js/main.74f10021.js"
+    "static/js/main.ff60b431.js"
   ]
 }
