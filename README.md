@@ -1,5 +1,5 @@
 A video calling web app made using react.js and webrtc.
-speech and gesture recognition will be implemented in next build.
+speech and gesture recognition will be implemented in future builds.
 
 1. Project overview
 
