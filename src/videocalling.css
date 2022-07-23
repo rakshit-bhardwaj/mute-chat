@@ -1,0 +1,226 @@
+input {
+    border: none;
+    font-family: inherit;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+
+
+.home {
+    margin-top: 50px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.Heading {
+    color: white;
+    font-family: Ubuntu;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+
+.modalContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    padding: 30px;
+    color: var(--color-primary);
+    background-color: white;
+}
+
+.modal h3 {
+    margin: 0;
+    font-weight: normal;
+}
+
+.modal .container {
+    display: flex;
+    margin-top: 40px;
+}
+
+.modal button.secondary {
+    margin-left: auto;
+    background-color: var(--color-primary-light);
+    color: var(--color-primary);
+    margin-right: 20px;
+}
+
+.videos {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    gap: 30px;
+    
+}
+
+video {
+    width: 45%;
+    background: #ffffff;
+    aspect-ratio: 4 / 3;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+
+.videos .buttonsContainer {
+    position: absolute;
+    left: 50%;
+    bottom: 3%;
+    transform: translateX(-50%);
+    display: flex;
+    z-index: 1;
+}
+
+.videos .buttonsContainer .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid transparent;
+    padding: 20px;
+    border-radius: 50%;
+    font-size: 0;
+    transition-property: border-color, box-shadow;
+    transition-duration: 500ms;
+    transition-timing-function: ease;
+}
+
+.videos .buttonsContainer .button:hover {
+    box-shadow: 0px 5px 10px #0000001a;
+    border-color: transparent;
+}
+
+.videos .buttonsContainer .hangup {
+    height: 1px;
+    width: 1px;
+    margin-right: 50px;
+    background-color: #ffffff;
+    color: #ffffff;
+}
+
+.videos .buttonsContainer .more {
+    height: 1px;
+    width: 1px;
+    background-color: white;
+    border-color: #dddddd;
+    cursor: pointer;
+}
+
+.videos .buttonsContainer .more .popover {
+    visibility: hidden;
+    position: absolute;
+    bottom: 100%;
+    left: 100%;
+    padding: 20px 0px;
+    font-size: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px #0000001a;
+}
+
+.videos .buttonsContainer .more:focus-within .popover {
+    visibility: visible;
+}
+
+.videos .buttonsContainer .more .popover button {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    background-color: white;
+    color: black;
+}
+
+.videos .buttonsContainer .more .popover button svg {
+    margin-right: 20px;
+}
+
+h3 {
+    color: rgba(22, 56, 142, 0.6);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.box button {
+
+    width: 150px;
+    height: auto;
+}
+
+.codeinput {
+    width: 25%;
+    height: 60px;
+    font-size: 1.5rem;
+    padding: 0;
+    margin: 10px;
+    font-family: Ubuntu;
+    text-align: center;
+}
+input {
+    font-size: 0.6rem;
+}
+
+.create .box {
+    top: 30px;
+}
+
+.menubutton {
+    width: 25%;
+    height: 60px;
+    margin: 10px;
+    font-size: 1.5rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #24a0ed ;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* @media screen and (max-width:730px){
+    .videos .local {
+        top: 420px;
+        right: 0;
+        width: 40%;
+        right: 15%;
+    }
+
+    .videos .remote {
+        width: 40%;
+        right: 30%;
+    }
+} */
+
+
+@media screen and (max-width:500px){
+    .videos {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        margin-top: 20px;
+        padding: 0;
+    }
+    video {
+        width: 80%;
+        margin: 0;
+    }
+}
